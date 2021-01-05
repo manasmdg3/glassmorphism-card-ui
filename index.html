@@ -2,14 +2,11 @@
 <html>
 <head>
    <title>Glassmorphism Profile Card</title>
-   <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-     <!--Stylesheet-->
      <link rel="stylesheet" href="style.css">
-     <script src="https://kit.fontawesome.com/e5e7f52248.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="card">
+    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.3" data-tilt-scale="1.1">
        <div class="card-img">
           <img src="profile-picture.jpg" alt="profile">  
        </div>
@@ -29,5 +26,10 @@
           </div>
        </div>
     </div>
+    <!--
+       vanilla-tilt for tilt animation
+       source: https://micku7zu.github.io/vanilla-tilt.js/
+    -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 </body>
 </html>
